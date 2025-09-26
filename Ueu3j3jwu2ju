@@ -145,7 +145,7 @@ if free_access == true then
                 end
             end
     
-            return _MemBypass(self,...)
+            return MemBypass(self,...)
         end)
     
         -- Indexed Versions
@@ -187,7 +187,7 @@ if free_access == true then
                 end
             end
     
-            return _MemBypass(self,...)
+            return MemBypass(self,...)
         end)
     
         -- Indexed Versions
@@ -255,8 +255,6 @@ if free_access == true then
                 end
             end
         end
-    
-        return ContentProviderBypass(self, Instances, ...)
     end)
     
     local preloadBypass; preloadBypass = hookfunction(Content.PreloadAsync, function(a, b, c)
@@ -330,7 +328,6 @@ if free_access == true then
     local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/LionTheGreatRealFrFr/MobileLinoriaLib/main/addons/SaveManager.lua'))()
     local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/haalfiperth/Alwayswin/refs/heads/main/Deps/ThemeManager.lua"))()
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/haalfiperth/Alwayswin/refs/heads/main/Deps/Library.lua"))()
-    --
     local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/haalfiperth/Alwayswin/refs/heads/main/Deps/ESP.lua"))()
     local Crosshair = loadstring(game:HttpGet("https://raw.githubusercontent.com/haalfiperth/Alwayswin/refs/heads/main/Deps/Crosshair.lua"))()
     local Rain = loadstring(game:HttpGet("https://raw.githubusercontent.com/haalfiperth/Alwayswin/refs/heads/main/Deps/Rain.lua"))()
